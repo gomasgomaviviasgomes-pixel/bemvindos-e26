@@ -3,354 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Tenda dos Tapetes • Cortinas & Persianas em Embu das Artes</title>
-  <!-- Bootstrap 5 CSS + Ícones -->
+  <title>Mundo dos Barbeiros • Cosméticos & Perfumaria</title>
+  <!-- Bootstrap 5 CSS + ícones próprios -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Favicon dinâmico (criado via SVG inline convertido em data URI) -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%23b8860b;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%238b5a2b;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' ry='20' fill='url(%23grad)' /%3E%3Cpath d='M25 65 L40 30 L60 30 L75 65 Z' fill='%23f5e6d3' stroke='%234d2e1b' stroke-width='3'/%3E%3Ccircle cx='35' cy='55' r='5' fill='%23d4af37'/%3E%3Ccircle cx='50' cy='45' r='7' fill='%23c49a2c'/%3E%3Ccircle cx='65' cy='55' r='5' fill='%23d4af37'/%3E%3Ctext x='50' y='88' font-size='16' font-weight='bold' text-anchor='middle' fill='%23f5e6d3' font-family='sans-serif'%3ETT%3C/text%3E%3C/svg%3E">
+  <!-- Favicon dinâmico (emoji de barbearia como ícone) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💈</text></svg>">
   <style>
-    :root {
-      --dourado-escuro: #8b5a2b;
-      --dourado: #b8860b;
-      --bege-claro: #fdf7f0;
-      --marrom-profundo: #4d2e1b;
-      --creme: #f5e6d3;
-      --cinza-soft: #f8f5f2;
-      --texto-escuro: #3a2c1c;
-      --verde-toque: #5a6b4a;
-    }
-
     body {
-      font-family: 'Segoe UI', Roboto, 'Helvetica Neue', system-ui, sans-serif;
-      background-color: var(--bege-claro);
-      color: var(--texto-escuro);
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+      background-color: #f8f5f2;
       scroll-behavior: smooth;
     }
-
-    /* navbar personalizada */
-    .navbar-tenda {
-      background: linear-gradient(135deg, var(--marrom-profundo) 0%, #5e3e24 100%);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    .navbar-custom {
+      background: rgba(30, 30, 30, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid #c8a96e;
     }
-    .navbar-brand {
+    .logo-text {
       font-weight: 700;
-      font-size: 1.6rem;
-      letter-spacing: 0.5px;
-      color: var(--creme) !important;
-      display: flex;
-      align-items: center;
-      gap: 8px;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #f3e1c2, #c8a96e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
-    .navbar-brand i {
-      font-size: 2rem;
-      color: var(--dourado);
-    }
-    .nav-link {
-      color: var(--creme) !important;
-      font-weight: 500;
-      margin: 0 5px;
-      transition: 0.2s;
-    }
-    .nav-link:hover {
-      color: var(--dourado) !important;
-      transform: translateY(-1px);
-    }
-
-    /* hero com tom quente */
     .hero-section {
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.5)), 
-                  url('https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=2080&auto=format&fit=crop') center/cover no-repeat;
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      color: white;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-      border-bottom: 6px solid var(--dourado);
-    }
-
-    .hero-content h1 {
-      font-size: 3.2rem;
-      font-weight: 800;
-      letter-spacing: 1px;
-    }
-    .hero-content .lead {
-      font-size: 1.4rem;
-      font-weight: 400;
-      background: rgba(139, 90, 43, 0.7);
-      display: inline-block;
-      padding: 0.5rem 1.8rem;
-      border-radius: 40px;
-      backdrop-filter: blur(4px);
-    }
-
-    .badge-ano {
-      background-color: var(--dourado);
-      color: #2c1e0f;
-      font-weight: 700;
-      font-size: 1rem;
-      padding: 0.4rem 1.2rem;
-      border-radius: 30px;
-      display: inline-block;
-      margin-top: 10px;
-      letter-spacing: 0.8px;
-    }
-
-    .icon-box {
-      background: white;
-      border-radius: 20px;
-      padding: 1.8rem 1.2rem;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-      transition: 0.25s;
-      border: 1px solid #ede3d6;
-      height: 100%;
-    }
-    .icon-box:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 18px 30px rgba(139, 90, 43, 0.15);
-      border-color: var(--dourado);
+      background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+      color: #f0e6d3;
+      border-bottom: 4px solid #c8a96e;
+      padding: 4rem 0;
     }
     .icon-circle {
-      background: var(--dourado);
-      width: 70px;
-      height: 70px;
-      border-radius: 50%;
-      display: flex;
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto 1.2rem;
-      color: white;
-      font-size: 2.2rem;
-      box-shadow: 0 6px 12px rgba(184, 134, 11, 0.4);
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: rgba(200, 169, 110, 0.15);
+      color: #c8a96e;
+      font-size: 2rem;
+      margin-bottom: 0.75rem;
+      transition: all 0.3s;
     }
-
-    .secao-dados {
-      background: linear-gradient(105deg, #fff9f2 0%, #ffffff 100%);
-      border-left: 8px solid var(--dourado);
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.04);
+    .icon-circle:hover {
+      background: #c8a96e;
+      color: #1a1a1a;
+      transform: translateY(-3px);
     }
-
-    .footer-tenda {
-      background: #2d1e12;
-      color: #e5d5c0;
-      border-top: 5px solid var(--dourado);
+    .card-cnae {
+      background: white;
+      border-left: 5px solid #c8a96e;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: 0.2s;
     }
-
-    .btn-dourado {
-      background: var(--dourado);
-      border: none;
-      color: white;
+    .card-cnae:hover {
+      box-shadow: 0 20px 30px rgba(0,0,0,0.08);
+    }
+    .product-badge {
+      background-color: #2c2c2c;
+      color: #f0e6d3;
+      font-weight: 500;
+      padding: 0.35rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+    }
+    .footer-custom {
+      background: #1e1e1e;
+      color: #ccc;
+      border-top: 3px solid #c8a96e;
+    }
+    .btn-outline-gold {
+      border: 1.5px solid #c8a96e;
+      color: #c8a96e;
+      background: transparent;
       font-weight: 600;
-      padding: 0.7rem 2rem;
-      border-radius: 40px;
-      transition: 0.3s;
-      box-shadow: 0 4px 10px rgba(184, 134, 11, 0.5);
     }
-    .btn-dourado:hover {
-      background: #a37e0a;
-      color: white;
-      transform: scale(1.03);
+    .btn-outline-gold:hover {
+      background: #c8a96e;
+      color: #1a1a1a;
     }
-
-    .linha-decorativa {
-      width: 80px;
-      height: 4px;
-      background: var(--dourado);
-      margin: 0.8rem auto 1.5rem;
-      border-radius: 5px;
+    .modal-content {
+      border-radius: 18px;
+      background: #fefcf8;
     }
-
-    @media (max-width: 768px) {
-      .hero-content h1 {
-        font-size: 2.3rem;
-      }
-      .hero-content .lead {
-        font-size: 1.1rem;
-        padding: 0.4rem 1.2rem;
-      }
+    address {
+      font-style: normal;
+      line-height: 1.7;
+    }
+    .divider-gold {
+      height: 2px;
+      background: linear-gradient(to right, transparent, #c8a96e, transparent);
+      margin: 2rem 0;
     }
   </style>
 </head>
-<body id="topo">
+<body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark navbar-tenda sticky-top py-2">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top py-2">
   <div class="container">
-    <a class="navbar-brand" href="#">
-      <i class="bi bi-building"></i> Tenda dos Tapetes
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <i class="bi bi-scissors me-2 fs-3" style="color: #c8a96e;"></i>
+      <span class="logo-text fs-4">Mundo dos Barbeiros</span>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Alternar navegação">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Alternar navegação">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navPrincipal">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
-        <li class="nav-item"><a class="nav-link" href="#inicio"><i class="bi bi-house-door-fill me-1"></i>Início</a></li>
-        <li class="nav-item"><a class="nav-link" href="#diferenciais"><i class="bi bi-star-fill me-1"></i>Diferenciais</a></li>
-        <li class="nav-item"><a class="nav-link" href="#empresa"><i class="bi bi-info-circle-fill me-1"></i>Quem Somos</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contato"><i class="bi bi-telephone-fill me-1"></i>Contato</a></li>
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-2">
+        <li class="nav-item"><a class="nav-link active" href="#inicio"><i class="bi bi-house-door me-1"></i>Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#atividade"><i class="bi bi-bag-check me-1"></i>CNAE</a></li>
+        <li class="nav-item"><a class="nav-link" href="#produtos"><i class="bi bi-box-seam me-1"></i>Produtos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato"><i class="bi bi-telephone me-1"></i>Contato</a></li>
+        <li class="nav-item">
+          <button class="btn btn-sm btn-outline-gold ms-1" data-bs-toggle="modal" data-bs-target="#termosModal" title="Termos de Uso e Privacidade">
+            <i class="bi bi-shield-lock"></i> Legal
+          </button>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Hero Section -->
-<header id="inicio" class="hero-section">
-  <div class="container text-center text-md-start">
-    <div class="row align-items-center">
-      <div class="col-lg-8 hero-content">
-        <span class="badge-ano mb-3"><i class="bi bi-calendar-check"></i> Desde 2005</span>
-        <h1 class="display-4 fw-bold mt-2">Tapeçaria, Cortinas & Persianas</h1>
-        <p class="lead mt-3 mb-2"><i class="bi bi-geo-alt-fill"></i> Embu das Artes · SP</p>
-        <p class="fs-5 fw-light mt-3">Transformamos ambientes com elegância, conforto e qualidade artesanal.</p>
-        <div class="mt-4">
-          <a href="#contato" class="btn btn-dourado btn-lg"><i class="bi bi-chat-dots-fill me-2"></i>Solicitar Orçamento</a>
-          <a href="tel:+551150959494" class="btn btn-outline-light btn-lg ms-2 mt-2 mt-sm-0"><i class="bi bi-telephone"></i> Ligar Agora</a>
-        </div>
-      </div>
-      <div class="col-lg-4 d-none d-lg-block text-center">
-        <i class="bi bi-palette-fill" style="font-size: 8rem; color: rgba(245,230,211,0.9); filter: drop-shadow(0 0 12px #b8860b);"></i>
-      </div>
+<!-- Hero / cabeçalho -->
+<section id="inicio" class="hero-section text-center">
+  <div class="container py-5">
+    <div class="mb-3">
+      <span class="badge bg-dark text-warning px-3 py-2 fs-6"><i class="bi bi-building"></i> CNPJ 46.240.496/0001-71</span>
     </div>
+    <h1 class="display-4 fw-bold mb-2">Mundo dos Barbeiros</h1>
+    <p class="lead mb-1">Comércio de Produtos de Barbearia LTDA</p>
+    <p class="fs-5 fw-light">47.72-5-00 • Cosméticos, Perfumaria & Higiene Pessoal</p>
+    <hr class="w-25 mx-auto" style="border-color: #c8a96e; opacity: 0.8;">
+    <p class="mt-3"><i class="bi bi-geo-alt-fill me-1"></i>Rua Tabatinguera, 140 • Sé • São Paulo/SP • 01020-901</p>
+    <p><i class="bi bi-calendar-check me-1"></i>Data Situação Cadastral: 03/05/2022</p>
   </div>
-</header>
+</section>
 
-<!-- Seção de Ícones / Diferenciais -->
-<section id="diferenciais" class="py-5 bg-white">
+<!-- Seção CNAE e descritores -->
+<section id="atividade" class="py-5 bg-white">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="fw-bold" style="color: var(--marrom-profundo);">Nossos Serviços & Qualidade</h2>
-      <div class="linha-decorativa"></div>
-      <p class="text-muted">Soluções completas em tapeçaria, cortinas sob medida e persianas.</p>
+      <span class="icon-circle"><i class="bi bi-file-earmark-text"></i></span>
+      <h2 class="fw-bold">Atividade Principal • 47.72-5-00</h2>
+      <p class="text-muted">Comércio varejista de cosméticos, produtos de perfumaria e de higiene pessoal</p>
     </div>
     <div class="row g-4">
-      <div class="col-md-4 col-sm-6">
-        <div class="icon-box text-center">
-          <div class="icon-circle"><i class="bi bi-scissors"></i></div>
-          <h5 class="fw-bold">Cortinas Sob Medida</h5>
-          <p class="text-muted small">Tecidos nobres, blackout, voil e linho. Perfeito acabamento manual.</p>
+      <div class="col-md-6">
+        <div class="card-cnae p-4 h-100">
+          <h5 class="fw-bold"><i class="bi bi-check2-circle me-2" style="color:#c8a96e;"></i>Esta atividade compreende</h5>
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2"><i class="bi bi-dot"></i> Cosméticos, produtos de perfumaria, toucador e higiene pessoal</li>
+            <li class="mb-2"><i class="bi bi-dot"></i> Comércio especializado em fraldas descartáveis e absorventes higiênicos</li>
+          </ul>
         </div>
       </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="icon-box text-center">
-          <div class="icon-circle"><i class="bi bi-sun-fill"></i></div>
-          <h5 class="fw-bold">Persianas Modernas</h5>
-          <p class="text-muted small">Rolô, romana, vertical e horizontal. Design funcional e sofisticado.</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="icon-box text-center">
-          <div class="icon-circle"><i class="bi bi-brush-fill"></i></div>
-          <h5 class="fw-bold">Tapeçaria Artesanal</h5>
-          <p class="text-muted small">Reforma de estofados, tapeçaria decorativa e personalizada.</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="icon-box text-center">
-          <div class="icon-circle"><i class="bi bi-house-heart-fill"></i></div>
-          <h5 class="fw-bold">Atendimento Residencial</h5>
-          <p class="text-muted small">Visita técnica sem compromisso para medição e consultoria.</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="icon-box text-center">
-          <div class="icon-circle"><i class="bi bi-building-fill"></i></div>
-          <h5 class="fw-bold">Projetos Comerciais</h5>
-          <p class="text-muted small">Lojas, escritórios e ambientes corporativos com elegância.</p>
-        </div>
-      </div>
-      <div class="col-md-4 col-sm-6">
-        <div class="icon-box text-center">
-          <div class="icon-circle"><i class="bi bi-star-fill"></i></div>
-          <h5 class="fw-bold">Garantia & Procedência</h5>
-          <p class="text-muted small">Materiais selecionados e mão de obra experiente desde 2005.</p>
+      <div class="col-md-6">
+        <div class="card-cnae p-4 h-100">
+          <h5 class="fw-bold"><i class="bi bi-tags-fill me-2" style="color:#c8a96e;"></i>Descritores principais</h5>
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <span class="product-badge"><i class="bi bi-scissors"></i> Barbearia</span>
+            <span class="product-badge">Perfumes, essências</span>
+            <span class="product-badge">Cremes e loções</span>
+            <span class="product-badge">Esmaltes para unhas</span>
+            <span class="product-badge">Batons e blush</span>
+            <span class="product-badge">Fraldas descartáveis</span>
+            <span class="product-badge">Absorvente higiênico</span>
+            <span class="product-badge">Creme dental</span>
+            <span class="product-badge">Bronzeadores</span>
+            <span class="product-badge">Higiene para animais</span>
+            <span class="product-badge">Preservativos</span>
+            <span class="product-badge">Artigos de toucador</span>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Frases e identidade visual -->
-<section class="py-5" style="background: #fdf3e4;">
+<!-- Seção de ícones e frases / produtos em destaque -->
+<section id="produtos" class="py-5" style="background: #f4efe7;">
+  <div class="container">
+    <div class="text-center mb-5">
+      <span class="icon-circle"><i class="bi bi-stars"></i></span>
+      <h2 class="fw-bold">Nossas especialidades</h2>
+      <p class="text-secondary">Tudo para barbearia, beleza e cuidados pessoais</p>
+    </div>
+    <div class="row g-4 text-center">
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded-4 shadow-sm h-100">
+          <i class="bi bi-brush fs-1" style="color:#c8a96e;"></i>
+          <p class="fw-semibold mt-2 small">Bases & Pincéis</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded-4 shadow-sm h-100">
+          <i class="bi bi-droplet fs-1" style="color:#c8a96e;"></i>
+          <p class="fw-semibold mt-2 small">Óleos & Essências</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded-4 shadow-sm h-100">
+          <i class="bi bi-suit-heart fs-1" style="color:#c8a96e;"></i>
+          <p class="fw-semibold mt-2 small">Preservativos</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded-4 shadow-sm h-100">
+          <i class="bi bi-sun fs-1" style="color:#c8a96e;"></i>
+          <p class="fw-semibold mt-2 small">Bronzeadores</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded-4 shadow-sm h-100">
+          <i class="bi bi-flower1 fs-1" style="color:#c8a96e;"></i>
+          <p class="fw-semibold mt-2 small">Perfumaria</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-3 col-lg-2">
+        <div class="p-3 bg-white rounded-4 shadow-sm h-100">
+          <i class="bi bi-puzzle fs-1" style="color:#c8a96e;"></i>
+          <p class="fw-semibold mt-2 small">Fraldas & Higiene</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5">
+      <p class="fst-italic fs-5 text-dark">“Do barbear clássico ao cuidado diário, temos tudo para você e sua família.”</p>
+      <p class="fw-light">Comércio varejista de produtos de beleza e higiene pessoal • também para uso veterinário.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contato / localização -->
+<section id="contato" class="py-5 bg-dark text-light">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <i class="bi bi-chat-quote-fill" style="font-size: 3rem; color: var(--dourado);"></i>
-        <h3 class="fw-bold mt-2" style="color: var(--marrom-profundo);">"Cada detalhe que transforma sua casa em um refúgio."</h3>
-        <p class="lead mt-3 fst-italic">Trabalhamos com paixão pela tapeçaria fina, unindo tradição e tendências atuais.</p>
-        <div class="d-flex mt-4 gap-3">
-          <span class="badge bg-dark px-3 py-2"><i class="bi bi-check-lg"></i> Atendimento em Embu das Artes e região</span>
-          <span class="badge px-3 py-2" style="background: var(--dourado);"><i class="bi bi-whatsapp"></i> Consultoria rápida</span>
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h3 class="fw-bold mb-3"><i class="bi bi-shop me-2"></i>Mundo dos Barbeiros</h3>
+        <address class="fs-5">
+          <strong>Razão Social:</strong> Mundo dos Barbeiros Comercio de Produtos de Barbearia LTDA<br>
+          <strong>Nome Fantasia:</strong> Mundo dos Barbeiros Comercio de Produtos de Barbearia LTDA<br>
+          <strong>CNPJ:</strong> 46.240.496/0001-71<br>
+          <strong>Endereço:</strong> Rua Tabatinguera, 140 • Bairro Sé<br>
+          São Paulo - SP • CEP 01020-901<br>
+          <strong><i class="bi bi-telephone-inbound me-1"></i></strong> (11) 5563-1961
+        </address>
+        <div class="mt-3">
+          <span class="badge bg-light text-dark p-2 fs-6"><i class="bi bi-check-circle-fill text-success me-1"></i> Situação Cadastral ativa desde 03/05/2022</span>
         </div>
       </div>
-      <div class="col-md-6 text-center">
-        <img src="https://images.unsplash.com/photo-1585412727339-54e4bae3bbf9?q=80&w=2070&auto=format&fit=crop" alt="Tecidos e tapeçaria" class="img-fluid rounded-4 shadow-lg" style="max-height: 320px; object-fit: cover; width: 100%;">
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Seção com dados da empresa (CNPJ, endereço etc) -->
-<section id="empresa" class="py-5 bg-white">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 mb-4 mb-lg-0">
-        <h2 class="fw-bold" style="color: var(--marrom-profundo);"><i class="bi bi-building-fill me-2" style="color: var(--dourado);"></i>Tenda dos Tapetes LTDA</h2>
-        <div class="linha-decorativa ms-0"></div>
-        <p class="mt-3"><strong>Razão Social:</strong> Tenda dos Tapetes LTDA<br>
-        <strong>Nome Fantasia:</strong> Tenda dos Tapetes LTDA</p>
-        <p><i class="bi bi-calendar2-check-fill text-success me-1"></i> <strong>Situação Cadastral Ativa desde:</strong> 03/11/2005</p>
-        <p><i class="bi bi-credit-card-2-front"></i> <strong>CNPJ:</strong> 03.211.189/0001-50</p>
-        <div class="mt-4 p-3 rounded-3" style="background: #f9f2e8;">
-          <i class="bi bi-geo-alt-fill fs-4" style="color: var(--dourado);"></i>
-          <span class="fw-bold ms-1">Endereço Completo</span>
-          <p class="mb-0 mt-1">Rua Nossa Senhora do Rosario, 25<br> Bairro Centro · Embu das Artes – SP<br> CEP: 06803-430</p>
-        </div>
-      </div>
-      <div class="col-lg-7">
-        <div class="secao-dados">
-          <h4 class="fw-bold mb-3"><i class="bi bi-clock-history me-2"></i>Horário de Atendimento</h4>
-          <ul class="list-unstyled">
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Segunda a Sexta: 08h30 às 18h00</li>
-            <li><i class="bi bi-check-circle-fill text-success me-2"></i> Sábados: 09h00 às 13h00</li>
-            <li class="mt-3"><i class="bi bi-telephone-fill fs-5 me-2" style="color: var(--dourado);"></i> <strong>(11) 5095-9494</strong></li>
-            <li><i class="bi bi-envelope-fill me-2" style="color: var(--dourado);"></i> contato@tendadostapetes.com.br</li>
-          </ul>
-          <hr>
-          <div class="d-flex flex-wrap gap-2 mt-3">
-            <span class="badge bg-secondary fs-6"><i class="bi bi-tag-fill"></i> Cortinas</span>
-            <span class="badge bg-secondary fs-6"><i class="bi bi-tag-fill"></i> Persianas</span>
-            <span class="badge bg-secondary fs-6"><i class="bi bi-tag-fill"></i> Tapeçaria</span>
-            <span class="badge bg-secondary fs-6"><i class="bi bi-tag-fill"></i> Reforma de Estofados</span>
-          </div>
-          <p class="mt-3 fst-italic text-muted small">“Comércio varejista de artigos de tapeçaria, cortinas e persianas — tradição desde 2005.”</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contato + frase final -->
-<section id="contato" class="py-5" style="background: linear-gradient(180deg, #faf5ed 0%, #ffffff 100%);">
-  <div class="container text-center">
-    <h2 class="fw-bold" style="color: var(--marrom-profundo);">Solicite seu orçamento</h2>
-    <div class="linha-decorativa"></div>
-    <p class="mb-4">Fale diretamente conosco pelo telefone ou visite nossa loja no centro de Embu das Artes.</p>
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-        <div class="d-grid gap-3 d-sm-flex justify-content-center">
-          <a href="tel:+551150959494" class="btn btn-dourado btn-lg px-4 py-3">
-            <i class="bi bi-telephone-forward-fill me-2"></i> (11) 5095-9494
-          </a>
-          <a href="https://wa.me/551150959494?text=Olá,%20gostaria%20de%20informações%20sobre%20cortinas%20e%20persianas." target="_blank" class="btn btn-success btn-lg px-4 py-3">
-            <i class="bi bi-whatsapp me-2"></i> WhatsApp
-          </a>
-        </div>
-        <div class="mt-4 p-3 bg-white rounded-4 shadow-sm">
-          <i class="bi bi-pin-map-fill fs-3" style="color: var(--dourado);"></i>
-          <p class="fw-bold mb-1">Rua Nossa Senhora do Rosario, 25 - Centro</p>
-          <p class="text-muted">Embu das Artes · SP · 06803-430</p>
+      <div class="col-lg-6 text-center">
+        <div class="p-4 bg-secondary bg-opacity-25 rounded-4">
+          <i class="bi bi-geo-alt-fill display-3" style="color:#c8a96e;"></i>
+          <p class="mt-2">Atendimento especializado em barbearia e cosméticos.</p>
+          <p class="small">Também trabalhamos com artigos de toucador e higiene animal.</p>
         </div>
       </div>
     </div>
@@ -358,41 +268,71 @@
 </section>
 
 <!-- Footer -->
-<footer class="footer-tenda pt-5 pb-4">
+<footer class="footer-custom py-4 text-center">
   <div class="container">
-    <div class="row">
-      <div class="col-md-5 mb-3">
-        <h5 class="fw-bold text-uppercase" style="color: var(--dourado);"><i class="bi bi-building"></i> Tenda dos Tapetes</h5>
-        <p class="small">Excelência em tapeçaria, cortinas e persianas. Transformando ambientes com sofisticação desde 2005.</p>
-        <p class="small mb-0"><i class="bi bi-shield-check"></i> CNPJ: 03.211.189/0001-50</p>
-      </div>
-      <div class="col-md-4 mb-3">
-        <h6 class="fw-bold" style="color: var(--dourado);">Links rápidos</h6>
-        <ul class="list-unstyled small">
-          <li><a href="#inicio" class="text-decoration-none text-light-emphasis">Início</a></li>
-          <li><a href="#diferenciais" class="text-decoration-none text-light-emphasis">Serviços</a></li>
-          <li><a href="#empresa" class="text-decoration-none text-light-emphasis">Quem Somos</a></li>
-        </ul>
-      </div>
-      <div class="col-md-3">
-        <h6 class="fw-bold" style="color: var(--dourado);">Contato</h6>
-        <p class="small mb-1"><i class="bi bi-telephone"></i> (11) 5095-9494</p>
-        <p class="small"><i class="bi bi-envelope"></i> contato@tendadostapetes.com.br</p>
-        <div class="mt-2">
-          <a href="#" class="text-light me-2"><i class="bi bi-instagram fs-5"></i></a>
-          <a href="#" class="text-light me-2"><i class="bi bi-facebook fs-5"></i></a>
-        </div>
-      </div>
-    </div>
-    <hr class="border-secondary my-3">
-    <div class="text-center small">
-      <span>© 2025 Tenda dos Tapetes LTDA · Todos os direitos reservados. | Embu das Artes - SP</span><br>
-      <span class="text-light-emphasis">Situação cadastral ativa desde 03/11/2005</span>
+    <p class="mb-1"><i class="bi bi-c-circle"></i> 2025 Mundo dos Barbeiros • CNPJ 46.240.496/0001-71</p>
+    <p class="small mb-2">47.72-5-00 | Cosméticos, perfumaria e higiene pessoal</p>
+    <div>
+      <button class="btn btn-sm btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#termosModal"><i class="bi bi-file-text"></i> Termos de Uso</button>
+      <button class="btn btn-sm btn-outline-light" data-bs-toggle="modal" data-bs-target="#privacidadeModal"><i class="bi bi-lock"></i> Política de Privacidade</button>
     </div>
   </div>
 </footer>
 
+<!-- Modal Termos de Uso -->
+<div class="modal fade" id="termosModal" tabindex="-1" aria-labelledby="termosLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #2c2c2c; color: #f0e6d3;">
+        <h5 class="modal-title" id="termosLabel"><i class="bi bi-journal-text me-2"></i>Termos de Uso</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">1. Aceitação dos Termos</h6>
+        <p>Ao acessar o site Mundo dos Barbeiros, você concorda com estes termos. Este site é mantido por Mundo dos Barbeiros Comercio de Produtos de Barbearia LTDA, CNPJ 46.240.496/0001-71.</p>
+        <h6 class="fw-bold">2. Uso do site</h6>
+        <p>O conteúdo destina-se a informar sobre produtos de barbearia, cosméticos, perfumaria e higiene pessoal (CNAE 47.72-5-00). Não realizamos vendas diretas online neste ambiente, mas apresentamos nosso portfólio.</p>
+        <h6 class="fw-bold">3. Propriedade Intelectual</h6>
+        <p>Marca, logotipo e descrições são propriedade da empresa. Ícones e framework Bootstrap são utilizados conforme suas licenças.</p>
+        <h6 class="fw-bold">4. Limitação de responsabilidade</h6>
+        <p>As informações de produtos são ilustrativas. Para compras e disponibilidade, entre em contato pelo telefone (11) 5563-1961.</p>
+        <p class="mt-3 text-muted"><i class="bi bi-geo-alt"></i> Rua Tabatinguera, 140 - Sé, São Paulo/SP.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Entendi</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Política de Privacidade -->
+<div class="modal fade" id="privacidadeModal" tabindex="-1" aria-labelledby="privacidadeLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header" style="background: #2c2c2c; color: #f0e6d3;">
+        <h5 class="modal-title" id="privacidadeLabel"><i class="bi bi-shield-check me-2"></i>Política de Privacidade</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="fw-bold">1. Coleta de informações</h6>
+        <p>Não coletamos dados pessoais automaticamente. Nosso site é institucional e não possui formulários de cadastro. Podemos utilizar cookies mínimos para funcionamento (Bootstrap).</p>
+        <h6 class="fw-bold">2. Uso de informações</h6>
+        <p>Quaisquer contatos realizados via telefone ou e-mail serão tratados conforme a LGPD, apenas para finalidade comercial legítima relacionada a cosméticos e higiene pessoal.</p>
+        <h6 class="fw-bold">3. Compartilhamento</h6>
+        <p>Não compartilhamos dados com terceiros. Dados de contato são usados exclusivamente pela Mundo dos Barbeiros.</p>
+        <h6 class="fw-bold">4. Direitos do titular</h6>
+        <p>Você pode solicitar informações pelo telefone (11) 5563-1961 ou em nosso endereço na Rua Tabatinguera, 140 - Sé - SP.</p>
+        <p class="mt-3"><span class="badge bg-dark">CNPJ 46.240.496/0001-71</span> <span class="ms-2 text-muted">Atividade 47.72-5-00</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Script para fechar modais ao clicar em links internos (não necessário, mas mantido limpo) -->
 </body>
 </html>
